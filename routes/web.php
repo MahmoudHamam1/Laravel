@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::post('/SaveData',"NewController@Save");
+
+Route::get('/GetData',"NewController@get");
